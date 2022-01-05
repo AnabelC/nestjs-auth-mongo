@@ -27,6 +27,11 @@ export class UsersController {
     return this.usersService.findOne(id);
   }
 
+  // @Get(':email')
+  // get(@Param('email') email: string) {
+  //   return this.usersService.findByEmail(email);
+  // }
+
   @Get(':id/orders')
   getOrders(@Param('id') id: string) {
     return this.usersService.getOrderByUser(id);
